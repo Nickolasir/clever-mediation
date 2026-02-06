@@ -265,7 +265,7 @@ export default function Home() {
             </h2>
             <div className="space-y-4 text-lg text-warm-gray-600 leading-relaxed">
               <p>
-                As an experienced former attorney with extensive federal litigation experience and a proven track record
+                As a certified mediator and experienced former attorney with extensive federal litigation experience and a proven track record
                 in complex legal matters, I bring a unique perspective to mediation. My background includes
                 serving as <span className="font-semibold text-sage-700">legal counsel for four Members of Congress</span> in
                 complex federal litigation and achieving favorable outcomes through both litigation and negotiation.
