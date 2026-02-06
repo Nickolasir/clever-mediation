@@ -202,12 +202,13 @@ export default function Home() {
           <div className="lg:col-span-5 relative animate-fade-in-right delay-400">
             {/* Glassmorphic frame */}
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden glass-card p-3 shadow-2xl shadow-sage-500/10">
-              <div className="relative h-full rounded-[1.5rem] overflow-hidden img-zoom">
+              <div className="relative h-full rounded-[1.5rem] overflow-hidden">
                 <Image
                   src="/headshot.jpg"
                   alt="Professional Mediator"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                   priority
                 />
               </div>
@@ -361,20 +362,20 @@ export default function Home() {
             </h2>
           </div>
 
-          {/* Bento Grid Layout */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Large featured card - Business Disputes */}
-            <div className="md:col-span-2 lg:row-span-2 rounded-3xl bg-sage-50 p-10 group hover-glow relative overflow-hidden scroll-animate opacity-0">
+          {/* Services Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Business Disputes */}
+            <div className="rounded-3xl bg-sage-50 p-8 group hover-glow relative overflow-hidden scroll-animate opacity-0">
               <div className="absolute inset-0 bg-gradient-to-br from-sage-100 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-2xl bg-sage-100 flex items-center justify-center mb-6 group-hover:bg-sage-200 transition-colors">
-                  <svg className="w-8 h-8 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-14 h-14 rounded-xl bg-sage-100 flex items-center justify-center mb-5 group-hover:bg-sage-200 transition-colors">
+                  <svg className="w-7 h-7 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-semibold text-warm-gray-900 mb-4">Business Disputes</h3>
-                <p className="text-warm-gray-600 leading-relaxed text-lg">
-                  Commercial disputes, partnership conflicts, contract disagreements, and business dissolution handled with professionalism and discretion. Protect your business relationships while finding resolution.
+                <h3 className="text-xl font-semibold text-warm-gray-900 mb-3">Business Disputes</h3>
+                <p className="text-warm-gray-600">
+                  Commercial disputes, partnership conflicts, contract disagreements handled with discretion.
                 </p>
               </div>
             </div>
@@ -505,6 +506,7 @@ export default function Home() {
             {/* SVG curved path connecting steps */}
             <svg
               className="absolute top-12 left-0 right-0 w-full h-4 pointer-events-none hidden md:block"
+              viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
               <defs>
@@ -515,11 +517,11 @@ export default function Home() {
                 </linearGradient>
               </defs>
               <path
-                d="M 80 8 Q 200 20 400 8 T 720 8"
+                d="M 16.67 5 Q 33 8 50 5 T 83.33 5"
                 stroke="url(#timeline-gradient)"
-                strokeWidth="3"
+                strokeWidth="0.5"
                 fill="none"
-                strokeDasharray="8,8"
+                strokeDasharray="2,2"
                 className="opacity-60"
               />
             </svg>
